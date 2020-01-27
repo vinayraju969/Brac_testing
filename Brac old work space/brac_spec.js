@@ -30,7 +30,7 @@ describe('Brac login functionality', function () {
             console.log("Application title: " + title);
             expect(title).toEqual('First Access')
         })
-        
+
         //login page
         element(by.xpath("//input[@type='text']")).sendKeys("vinay");
         element(by.xpath("//input[@type='password']")).sendKeys("Brac@123");
@@ -46,7 +46,6 @@ describe('Brac login functionality', function () {
          }) */
 
         //or (To avoid morethan one element)
-
         var dashboardtitle = element.all(by.xpath("//span[text()='Dashboard']"));
         dashboardtitle.get(0).getText().then(function (dashboardtext) {
             console.log("Text of dashboard: " + dashboardtext);
@@ -118,12 +117,14 @@ describe('Brac login functionality', function () {
         element(by.xpath("//formly-form/formly-field[12]/zc-wrapper-label/zc-wrapper-fieldset/div/zc-wrapper-validation-messages/zc-field-radio/div/div[1]/label")).click();
         element(by.id("outstanding_installments_of_loan")).sendKeys("3");
         browser.sleep(1000);
+
         //scroll down
         browser.executeScript('window.scrollTo(0,100)');
         element(by.xpath("//formly-form/formly-field[15]/zc-wrapper-label/zc-wrapper-fieldset/div/zc-wrapper-validation-messages/zc-field-radio/div/div[1]/label/span[1]")).click();
         browser.sleep(1000);
         element(by.xpath("//formly-field[17]/zc-wrapper-label/zc-wrapper-fieldset/div/zc-wrapper-validation-messages/zc-field-radio/div/div[1]/label/span[1]")).click();
         browser.sleep(2000);
+
         //Requested amount
         element(by.id("amount")).sendKeys("10000000");
         browser.sleep(3000);
