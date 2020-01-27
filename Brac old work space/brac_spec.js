@@ -3,9 +3,7 @@ var chai = require('chai');
 chai.use(require('chai-smoothie'));
 var expect = chai.expect;
 */
-
 var url = "http://bracdev.firstaccess.co/#/loan";
-
 describe('Brac login functionality', function () {
     /*  browser.ignoreSynchronization = true; // for non-angular websites
      it('Excel File Operations', function() {
@@ -76,8 +74,6 @@ describe('Brac login functionality', function () {
         } else {
             console.log('Basic info text is not displayed ')
         }
-
-
         element(by.id("entrepreneur")).sendKeys("vinay");
         element(by.id("name")).sendKeys("steel");
         browser.sleep(2000);
@@ -141,7 +137,7 @@ describe('Brac login functionality', function () {
 
          mySelect.selectByPartialText("Sep")
       */
-
+     
         //Cancel
         element(by.buttonText("Cancel")).click();
         browser.sleep(10000);
