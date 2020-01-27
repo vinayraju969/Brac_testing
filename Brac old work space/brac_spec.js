@@ -30,13 +30,12 @@ describe('Brac login functionality', function () {
             console.log("Application title: " + title);
             expect(title).toEqual('First Access')
         })
-
+        
         //login page
         element(by.xpath("//input[@type='text']")).sendKeys("vinay");
         element(by.xpath("//input[@type='password']")).sendKeys("Brac@123");
         element(by.xpath("//button[text()='Login']")).click();
         browser.sleep(4000);
-
     });
 
     it('Dashboard page', async function () {
@@ -137,7 +136,7 @@ describe('Brac login functionality', function () {
 
          mySelect.selectByPartialText("Sep")
       */
-     
+
         //Cancel
         element(by.buttonText("Cancel")).click();
         browser.sleep(10000);
