@@ -1,6 +1,10 @@
-var expect = require('chai').expect
-var url = "http://bracdev.firstaccess.co/#/loan";
+/* var expect = require('chai').expect;
+var chai = require('chai');
+chai.use(require('chai-smoothie'));
+var expect = chai.expect;
+*/
 
+var url = "http://bracdev.firstaccess.co/#/loan"; 
 
 describe('Brac login functionality', function () {
     /*  browser.ignoreSynchronization = true; // for non-angular websites
@@ -11,7 +15,7 @@ describe('Brac login functionality', function () {
 
         browser.manage().timeouts().implicitlyWait(30000);
         browser.get(url);
-        browser.manage().window().maximize();  
+        browser.manage().window().maximize();
 
         //To get current URL
         /*  browser.getCurrentUrl().then(function(url1){
@@ -37,7 +41,7 @@ describe('Brac login functionality', function () {
 
     });
 
-    it('Dashboard page', function () {
+    it('Dashboard page', async function () {
         // To get text for dashboard
         /*  element(by.xpath("//span[text()='Dashboard']")).getText().then(function (dashboardtext) {
              console.log("Text of dashboard: " + dashboardtext);
@@ -61,17 +65,19 @@ describe('Brac login functionality', function () {
 
         // Add new survey
         element(by.xpath("//button[text()='Add Survey']")).click();
-        browser.sleep(3000);
+        await browser.sleep(3000);
 
         // Survey Basic information
-        var Basicinfo = element(by.xpath("//div[text()='BASIC INFORMATION']"))
-        Basicinfo.getText().then(function (isVisible) {
+        var Basicinfo = element(by.xpath("//div[text()='BASIC INFORMATION']"));
+      //  Basicinfo.getText().then(function (isVisible) {
             if (expect(Basicinfo.isDisplayed()).toBe(true)) {
 
-                console.log('Basic info text displayed:' + isVisible)
+                console.log('Basic info text displayed')
             } else {
-                console.log('Basic info text is displaying:' + isVisible)
-            }
+                console.log('Basic info text is not displayed ')
+            } 
+
+
             element(by.id("entrepreneur")).sendKeys("vinay");
             element(by.id("name")).sendKeys("steel");
             browser.sleep(2000);
@@ -128,13 +134,13 @@ describe('Brac login functionality', function () {
             browser.sleep(3000);
 
             //Date
-             element(by.xpath("//span[@class='ui-button-icon-left ui-clickable icon-calendar']")).click();
-             browser.sleep(3000);
-             var SelectWrapper = require('./select.ts');
-             var mySelect = new SelectWrapper(by.className("ui-datepicker-month ng-tns-c12-3 ng-star-inserted"));
- 
-                mySelect.selectByPartialText("Sep")
-        });
+            element(by.xpath("//span[@class='ui-button-icon-left ui-clickable icon-calendar']")).click();
+            browser.sleep(3000);
+            var SelectWrapper = require('./select.ts');
+            var mySelect = new SelectWrapper(by.className("ui-datepicker-month ng-tns-c12-3 ng-star-inserted"));
+
+            mySelect.selectByPartialText("Sep")
+        
 
         //Cancel
         element(by.buttonText("Cancel")).click();
