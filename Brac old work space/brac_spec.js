@@ -147,10 +147,7 @@ describe('Brac login functionality', function () {
         browser.sleep(10000);
 
         //Alert 
-        let alert1 = browser.switchTo().alert();
-
-
-        
+        let alert1 = browser.switchTo().alert()
         alert1.getText().then(function (alerttext) {
             console.log('text of alert: ' + alerttext)
             browser.sleep(10000);
