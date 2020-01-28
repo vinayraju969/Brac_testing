@@ -4,6 +4,7 @@ chai.use(require('chai-smoothie'));
 var expect = chai.expect;
 */
 var url = "http://bracdev.firstaccess.co/#/loan";
+
 describe('Brac login functionality', function () {
     /*  browser.ignoreSynchronization = true; // for non-angular websites
      it('Excel File Operations', function() {
