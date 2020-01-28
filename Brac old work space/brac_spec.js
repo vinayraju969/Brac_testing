@@ -10,7 +10,6 @@ describe('Brac login functionality', function () {
      browser.get("http://demo.automationtesting.in/Frames.html") */
 
     it('Login with valid data', function () {
-
         browser.manage().timeouts().implicitlyWait(30000);
         browser.get(url);
         browser.manage().window().maximize();
@@ -150,7 +149,6 @@ describe('Brac login functionality', function () {
             alert1.accept();
             //browser.switchTo().alert().dismiss();
             browser.sleep(10000);
-
         })
     })
 });
