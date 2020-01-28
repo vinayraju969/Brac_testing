@@ -271,156 +271,115 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
 
     var results = [
     {
-        "description": "Test case for application title |Brac Application Test Cases ",
-        "passed": true,
-        "pending": false,
-        "os": "windows",
-        "sessionId": "1c3514d6043c8ecf3d7e02821d9892ab",
-        "instanceId": 22652,
-        "browser": {
-            "name": "chrome",
-            "version": "79.0.3945.117"
-        },
-        "message": "Passed",
-        "browserLogs": [],
-        "screenShotFile": "00ff00f3-001c-003c-00f5-00100033006c.png",
-        "timestamp": 1580118802628,
-        "duration": 7024
-    },
-    {
-        "description": "Test case for url launch |Brac Application Test Cases ",
+        "description": "Login with valid data|Brac login functionality",
         "passed": false,
         "pending": false,
         "os": "windows",
-        "sessionId": "1c3514d6043c8ecf3d7e02821d9892ab",
-        "instanceId": 22652,
+        "sessionId": "3266eaa86c1c8e968df2c8a7486257a1",
+        "instanceId": 1016,
         "browser": {
             "name": "chrome",
-            "version": "79.0.3945.117"
+            "version": "79.0.3945.130"
         },
         "message": [
-            "Failed: No element found using locator: by.buttonText(\"Login\")"
+            "Expected '' to equal 'First Access'."
         ],
         "trace": [
-            "NoSuchElementError: No element found using locator: by.buttonText(\"Login\")\n    at elementArrayFinder.getWebElements.then (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:814:27)\n    at ManagedPromise.invokeCallback_ (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at asyncRun (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27)\n    at C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at process._tickCallback (internal/process/next_tick.js:68:7)Error\n    at ElementArrayFinder.applyAction_ (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:459:27)\n    at ElementArrayFinder.(anonymous function).args [as isDisplayed] (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:91:29)\n    at ElementFinder.(anonymous function).args [as isDisplayed] (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:831:22)\n    at E:\\Protractor workspace\\Brac_webapp\\Test_cases\\login_spec.js:29:33\n    at ManagedPromise.invokeCallback_ (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at asyncRun (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27)\n    at C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at process._tickCallback (internal/process/next_tick.js:68:7)\nFrom: Task: Run it(\"Test case for url launch \") in control flow\n    at UserContext.<anonymous> (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasminewd2\\index.js:94:19)\n    at attempt (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4297:26)\n    at QueueRunner.run (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4217:20)\n    at runNext (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4257:20)\n    at C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4264:13\n    at C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4172:9\n    at C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasminewd2\\index.js:64:48\n    at ControlFlow.emit (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\events.js:62:21)\n    at ControlFlow.shutdown_ (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2674:10)\n    at shutdownTask_.MicroTask (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2599:53)\nFrom asynchronous test: \nError\n    at Suite.<anonymous> (E:\\Protractor workspace\\Brac_webapp\\Test_cases\\login_spec.js:18:5)\n    at addSpecsToSuite (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:1107:25)\n    at Env.describe (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:1074:7)\n    at describe (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4399:18)\n    at Object.<anonymous> (E:\\Protractor workspace\\Brac_webapp\\Test_cases\\login_spec.js:9:1)\n    at Module._compile (internal/modules/cjs/loader.js:689:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)\n    at Module.load (internal/modules/cjs/loader.js:599:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)"
+            "Error: Failed expectation\n    at C:\\chaicode\\Brac_testing\\Brac old work space\\brac_spec.js:31:27\n    at ManagedPromise.invokeCallback_ (C:\\Users\\PC\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (C:\\Users\\PC\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\Users\\PC\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at asyncRun (C:\\Users\\PC\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27)\n    at C:\\Users\\PC\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at process._tickCallback (internal/process/next_tick.js:68:7)"
         ],
         "browserLogs": [],
-        "screenShotFile": "00b000ea-008d-007c-005f-00a700060069.png",
-        "timestamp": 1580118810264,
-        "duration": 13200
+        "screenShotFile": "007f00ac-0024-0011-00f0-00ee007d00d8.png",
+        "timestamp": 1580132891011,
+        "duration": 19875
     },
     {
-        "description": "Test case for forget password|Brac Application Test Cases ",
+        "description": "Dashboard page|Brac login functionality",
         "passed": false,
         "pending": false,
         "os": "windows",
-        "sessionId": "1c3514d6043c8ecf3d7e02821d9892ab",
-        "instanceId": 22652,
+        "sessionId": "3266eaa86c1c8e968df2c8a7486257a1",
+        "instanceId": 1016,
         "browser": {
             "name": "chrome",
-            "version": "79.0.3945.117"
+            "version": "79.0.3945.130"
         },
         "message": [
-            "NoSuchElementError: No element found using locator: By(xpath, //a[contains(text(),'Forgot Password ?')])"
+            "UnsupportedOperationError: sendKeysToActiveElement\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'\nSystem info: host: 'DESKTOP-JIPFL18', ip: '192.168.100.106', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_25'\nDriver info: driver.version: unknown"
         ],
         "trace": [
-            "NoSuchElementError: No element found using locator: By(xpath, //a[contains(text(),'Forgot Password ?')])\n    at elementArrayFinder.getWebElements.then (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:814:27)\n    at ManagedPromise.invokeCallback_ (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at asyncRun (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27)\n    at C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at process._tickCallback (internal/process/next_tick.js:68:7)Error\n    at ElementArrayFinder.applyAction_ (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:459:27)\n    at ElementArrayFinder.(anonymous function).args [as click] (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:91:29)\n    at ElementFinder.(anonymous function).args [as click] (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:831:22)\n    at Applicationdata.forgetpassword (E:\\Protractor workspace\\Brac_webapp\\Page_Objects\\login_page_po.js:41:28)\n    at UserContext.<anonymous> (E:\\Protractor workspace\\Brac_webapp\\Test_cases\\login_spec.js:40:25)"
+            "UnsupportedOperationError: sendKeysToActiveElement\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'\nSystem info: host: 'DESKTOP-JIPFL18', ip: '192.168.100.106', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_25'\nDriver info: driver.version: unknown\n    at Object.checkLegacyResponse (C:\\Users\\PC\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\error.js:546:15)\n    at parseHttpResponse (C:\\Users\\PC\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\http.js:509:13)\n    at doSend.then.response (C:\\Users\\PC\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\http.js:441:30)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\nFrom: Task: sendKeys\n    at thenableWebDriverProxy.schedule (C:\\Users\\PC\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\webdriver.js:807:17)\n    at actions.map.action (C:\\Users\\PC\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\actions.js:124:23)\n    at Array.map (<anonymous>)\n    at C:\\Users\\PC\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\actions.js:123:29\n    at TaskQueue.execute_ (C:\\Users\\PC\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\Users\\PC\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at asyncRun (C:\\Users\\PC\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27)\n    at C:\\Users\\PC\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\nFrom: Task: ActionSequence.perform\n    at ActionSequence.perform (C:\\Users\\PC\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\actions.js:122:33)\n    at UserContext.<anonymous> (C:\\chaicode\\Brac_testing\\Brac old work space\\brac_spec.js:84:63)"
         ],
-        "browserLogs": [],
-        "screenShotFile": "00160011-00d1-004e-0079-000c001100a2.png",
-        "timestamp": 1580118823883,
-        "duration": 5049
-    },
-    {
-        "description": "Test case for Login page|Brac Application Test Cases ",
-        "passed": false,
-        "pending": false,
-        "os": "windows",
-        "sessionId": "1c3514d6043c8ecf3d7e02821d9892ab",
-        "instanceId": 22652,
-        "browser": {
-            "name": "chrome",
-            "version": "79.0.3945.117"
-        },
-        "message": [
-            "Failed: No element found using locator: By(xpath, //input[@type='text'])"
+        "browserLogs": [
+            {
+                "level": "WARNING",
+                "message": "http://bracdev.firstaccess.co/#/loan/survey/survey-create - [DOM] Found 3 elements with non-unique id #approx_size_stock: (More info: https://goo.gl/9p2vKq) %o %o %o",
+                "timestamp": 1580132930869,
+                "type": ""
+            },
+            {
+                "level": "WARNING",
+                "message": "http://bracdev.firstaccess.co/#/loan/survey/survey-create - [DOM] Found 3 elements with non-unique id #bus_premises_status: (More info: https://goo.gl/9p2vKq) %o %o %o",
+                "timestamp": 1580132930870,
+                "type": ""
+            },
+            {
+                "level": "WARNING",
+                "message": "http://bracdev.firstaccess.co/#/loan/survey/survey-create - [DOM] Found 3 elements with non-unique id #bus_started: (More info: https://goo.gl/9p2vKq) %o %o %o",
+                "timestamp": 1580132930871,
+                "type": ""
+            },
+            {
+                "level": "WARNING",
+                "message": "http://bracdev.firstaccess.co/#/loan/survey/survey-create - [DOM] Found 2 elements with non-unique id #business_classif: (More info: https://goo.gl/9p2vKq) %o %o",
+                "timestamp": 1580132930871,
+                "type": ""
+            },
+            {
+                "level": "WARNING",
+                "message": "http://bracdev.firstaccess.co/#/loan/survey/survey-create - [DOM] Found 2 elements with non-unique id #have_bank_acc: (More info: https://goo.gl/9p2vKq) %o %o",
+                "timestamp": 1580132930872,
+                "type": ""
+            },
+            {
+                "level": "WARNING",
+                "message": "http://bracdev.firstaccess.co/#/loan/survey/survey-create - [DOM] Found 2 elements with non-unique id #have_outstanding_loans: (More info: https://goo.gl/9p2vKq) %o %o",
+                "timestamp": 1580132930872,
+                "type": ""
+            },
+            {
+                "level": "WARNING",
+                "message": "http://bracdev.firstaccess.co/#/loan/survey/survey-create - [DOM] Found 2 elements with non-unique id #interested_in_loan: (More info: https://goo.gl/9p2vKq) %o %o",
+                "timestamp": 1580132930873,
+                "type": ""
+            },
+            {
+                "level": "WARNING",
+                "message": "http://bracdev.firstaccess.co/#/loan/survey/survey-create - [DOM] Found 2 elements with non-unique id #know_brac_loc: (More info: https://goo.gl/9p2vKq) %o %o",
+                "timestamp": 1580132930873,
+                "type": ""
+            },
+            {
+                "level": "WARNING",
+                "message": "http://bracdev.firstaccess.co/#/loan/survey/survey-create - [DOM] Found 2 elements with non-unique id #know_services_by_brac: (More info: https://goo.gl/9p2vKq) %o %o",
+                "timestamp": 1580132930873,
+                "type": ""
+            },
+            {
+                "level": "WARNING",
+                "message": "http://bracdev.firstaccess.co/#/loan/survey/survey-create - [DOM] Found 2 elements with non-unique id #married_status: (More info: https://goo.gl/9p2vKq) %o %o",
+                "timestamp": 1580132930873,
+                "type": ""
+            },
+            {
+                "level": "WARNING",
+                "message": "http://bracdev.firstaccess.co/#/loan/survey/survey-create - [DOM] Found 2 elements with non-unique id #value: (More info: https://goo.gl/9p2vKq) %o %o",
+                "timestamp": 1580132930873,
+                "type": ""
+            }
         ],
-        "trace": [
-            "NoSuchElementError: No element found using locator: By(xpath, //input[@type='text'])\n    at elementArrayFinder.getWebElements.then (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:814:27)\n    at ManagedPromise.invokeCallback_ (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at asyncRun (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27)\n    at C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at process._tickCallback (internal/process/next_tick.js:68:7)Error\n    at ElementArrayFinder.applyAction_ (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:459:27)\n    at ElementArrayFinder.(anonymous function).args [as sendKeys] (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:91:29)\n    at ElementFinder.(anonymous function).args [as sendKeys] (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:831:22)\n    at Applicationdata.login (E:\\Protractor workspace\\Brac_webapp\\Page_Objects\\login_page_po.js:70:18)\n    at UserContext.<anonymous> (E:\\Protractor workspace\\Brac_webapp\\Test_cases\\login_spec.js:48:25)\n    at C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasminewd2\\index.js:112:25\n    at new ManagedPromise (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:1077:7)\n    at ControlFlow.promise (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2505:12)\n    at schedulerExecute (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasminewd2\\index.js:95:18)\n    at TaskQueue.execute_ (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\nFrom: Task: Run it(\"Test case for Login page\") in control flow\n    at UserContext.<anonymous> (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasminewd2\\index.js:94:19)\n    at attempt (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4297:26)\n    at QueueRunner.run (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4217:20)\n    at runNext (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4257:20)\n    at C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4264:13\n    at C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4172:9\n    at C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasminewd2\\index.js:64:48\n    at ControlFlow.emit (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\events.js:62:21)\n    at ControlFlow.shutdown_ (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2674:10)\n    at shutdownTask_.MicroTask (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2599:53)\nFrom asynchronous test: \nError\n    at Suite.<anonymous> (E:\\Protractor workspace\\Brac_webapp\\Test_cases\\login_spec.js:46:5)\n    at addSpecsToSuite (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:1107:25)\n    at Env.describe (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:1074:7)\n    at describe (C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4399:18)\n    at Object.<anonymous> (E:\\Protractor workspace\\Brac_webapp\\Test_cases\\login_spec.js:9:1)\n    at Module._compile (internal/modules/cjs/loader.js:689:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)\n    at Module.load (internal/modules/cjs/loader.js:599:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)"
-        ],
-        "browserLogs": [],
-        "screenShotFile": "007300ea-00a0-00cb-00e7-001100d80060.png",
-        "timestamp": 1580118829482,
-        "duration": 32
-    },
-    {
-        "description": "Test case for application title |Brac Application Test Cases ",
-        "passed": true,
-        "pending": false,
-        "os": "windows",
-        "sessionId": "1a7c212833da801f217389bc0e67fb6c",
-        "instanceId": 9112,
-        "browser": {
-            "name": "chrome",
-            "version": "79.0.3945.117"
-        },
-        "message": "Passed",
-        "browserLogs": [],
-        "screenShotFile": "0043002e-00ec-0099-0037-003c00980078.png",
-        "timestamp": 1580118887962,
-        "duration": 7035
-    },
-    {
-        "description": "Test case for url launch |Brac Application Test Cases ",
-        "passed": true,
-        "pending": false,
-        "os": "windows",
-        "sessionId": "1a7c212833da801f217389bc0e67fb6c",
-        "instanceId": 9112,
-        "browser": {
-            "name": "chrome",
-            "version": "79.0.3945.117"
-        },
-        "message": "Passed.",
-        "trace": "",
-        "browserLogs": [],
-        "screenShotFile": "006a000c-0094-0062-0067-00f900b5008a.png",
-        "timestamp": 1580118895357,
-        "duration": 10953
-    },
-    {
-        "description": "Test case for forget password|Brac Application Test Cases ",
-        "passed": true,
-        "pending": false,
-        "os": "windows",
-        "sessionId": "1a7c212833da801f217389bc0e67fb6c",
-        "instanceId": 9112,
-        "browser": {
-            "name": "chrome",
-            "version": "79.0.3945.117"
-        },
-        "message": "Passed",
-        "browserLogs": [],
-        "screenShotFile": "001200b6-00a1-00b6-0002-00dc00a00046.png",
-        "timestamp": 1580118906802,
-        "duration": 17525
-    },
-    {
-        "description": "Test case for Login page|Brac Application Test Cases ",
-        "passed": true,
-        "pending": false,
-        "os": "windows",
-        "sessionId": "1a7c212833da801f217389bc0e67fb6c",
-        "instanceId": 9112,
-        "browser": {
-            "name": "chrome",
-            "version": "79.0.3945.117"
-        },
-        "message": "Passed",
-        "browserLogs": [],
-        "screenShotFile": "00ff0047-00a4-005e-0009-00e500f20028.png",
-        "timestamp": 1580118924841,
-        "duration": 31654
+        "screenShotFile": "00d50022-007f-008d-009c-00de00a40075.png",
+        "timestamp": 1580132911500,
+        "duration": 26875
     }
 ];
 
